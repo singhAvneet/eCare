@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editResultTestId"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="100dp"
+        android:hint="pl enter patient ID only"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Patient Information"
+        android:onClick="showData"
+        android:id="@+id/button3"
+        android:layout_below="@+id/editResultTestId"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get List of Patient Id's"
+        android:onClick="Patientlist"
+        android:id="@+id/button7"
+        android:layout_below="@+id/button3"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:hint="results"
+        android:id="@+id/textResults"
+        android:layout_below="@+id/button7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="82dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:onClick="goBack"
+        android:id="@+id/button2"
+        android:layout_below="@+id/textResults"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp" />
+
+
+</RelativeLayout>

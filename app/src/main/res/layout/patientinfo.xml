@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="337dp"
+        android:layout_height="53dp"
+        android:text="Enter patient information"
+        android:textSize="30dp"
+
+
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/editTextTestId"
+        android:hint="Patient is Auto Generated"
+        android:textSize="17sp"
+        android:background="#9ff06b"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView"
+        />
+    <EditText
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/doctorId"
+        android:hint="put doctor id as 1"
+        android:layout_gravity="left" />
+    <EditText
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/firsttName"
+        android:hint="enter firstname"
+        android:layout_gravity="left" />
+    <EditText
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/lastName"
+        android:hint="enter lastname"
+        android:layout_gravity="left" />
+    <EditText
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/department"
+        android:hint="enter department"
+        android:layout_gravity="left" />
+
+    <EditText
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/room"
+        android:hint="enter room no."
+        android:layout_gravity="left" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:id="@+id/storepatient"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.22"
+
+        />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:id="@+id/dispplay"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.22"
+        android:onClick="goBack"
+        />
+
+
+</LinearLayout>
